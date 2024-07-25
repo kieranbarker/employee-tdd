@@ -11,17 +11,14 @@ class Employee {
     this.#salary = salary;
   }
 
-  // TODO: Implement the getName() method
   getName() {
     return this.#name;
   }
 
-  // TODO: Implement the getSalary() method
   getSalary() {
     return this.#salary;
   }
 
-  // TODO: Implement the raiseSalary() method (talk about value and coverage)
   raiseSalary(byPercent) {
     if (byPercent <= 0) {
       throw new Error("Percentage must be positive.");
