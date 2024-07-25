@@ -4,12 +4,12 @@ const Employee = require("./Employee.js");
 describe("The Employee() constructor", function () {
   it("Throws an error if a name is not provided", function () {
     // Arrange / Act
-    function createEmployee() {
-      const employee = new Employee();
+    function createUnnamedEmployee() {
+      new Employee();
     }
 
     // Assert
-    expect(createEmployee).toThrow();
+    expect(createUnnamedEmployee).toThrow();
   });
 });
 
