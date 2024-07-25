@@ -32,10 +32,10 @@ describe("The getSalary() method", function () {
     const employee = new Employee("Harry Hacker", 50_000);
 
     // Act
-    const employeeName = employee.getName();
+    const employeeSalary = employee.getSalary();
 
     // Assert
-    expect(employeeName).toBe("Harry Hacker");
+    expect(employeeSalary).toBe(50_000);
   });
 });
 
